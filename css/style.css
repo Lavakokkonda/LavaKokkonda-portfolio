@@ -1,0 +1,386 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  transition: all 0.2s;
+}
+body {
+  font-family: "Mulish", sans-serif;
+  background-color: #f7f7f7;
+}
+header {
+  width: 100%;
+  height: 5.625rem;
+  background-color: #141618;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+header h1 {
+  color: white;
+  margin-left: 3.125rem;
+  padding-top: 1.9125rem;
+  font-size: 1.375rem;
+  letter-spacing: 0.3125rem;
+}
+header h1 span{
+  color: red;
+}
+header button {
+  width: 6.25rem;
+  height: 2.1875rem;
+  color: white;
+  background-color: blueviolet;
+  outline: none;
+  border: none;
+  border-radius: 0.375rem;
+  position: absolute;
+  right: 3.125rem;
+  top: 1.875rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.875rem;
+}
+header button:hover{
+  background-color: #595;
+}
+.about-me{
+  width: 90%;
+  margin: auto;
+  margin-top: 0.625rem;
+}
+.about-me p{
+  text-align: justify;
+  padding-top: 0.625rem;
+  line-height: 1.5625rem;
+  padding-left: 1.875rem;
+  font-size: 1rem;
+}
+.skills-section{
+  width: 90%;
+  margin: auto;
+  margin-top: 0.625rem;
+}
+.skills-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.625rem;
+}
+.skills-subcontainer{
+  width: 23%;
+}
+.skill-box{
+  width: 90%;
+  height: 3.125rem;
+  border-radius: 0.625rem;
+  background-color: #fff;
+  margin: 1.25rem;
+  border: 0.0313rem solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: default;
+  box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.625rem 0.9375rem -0.1875rem, rgba(0, 0, 0, 0.05) 0rem 0.25rem 0.375rem -0.125rem;}
+.skills-subcontainer{
+  font-size: 1rem;
+}
+.skill-box:hover {
+  background-color: #141618;
+  color: white;
+  transform: scale(1.05);
+}
+.skills-subcontainer svg{
+  position: absolute;
+  left: 1.25rem;
+}
+.skills-subcontainer .skill-name{
+  left: 1.25rem;
+}
+.skill-rating{
+  color: gold;
+  font-size: 2.125rem;
+  padding: 0.3125rem;
+}
+#html-rating{
+  display: none;
+}
+#html-box{
+  display: flex;
+  justify-content: center;
+}
+#html-box:hover #html-rating{
+  display: block;
+}
+#html-box:hover .skill-name{
+  display: none;
+}
+#html-box:hover svg{
+  display: none;
+}
+#css-rating{
+  display: none;
+}
+#css-box{
+  display: flex;
+  justify-content: center;
+}
+#css-box:hover #css-rating{
+  display: block;
+}
+#css-box:hover .skill-name{
+  display: none;
+}
+#css-box:hover svg{
+  display: none;
+}
+#javascript-rating{
+  display: none;
+}
+#javascript-box{
+  display: flex;
+  justify-content: center;
+}
+#javascript-box:hover #javascript-rating{
+  display: block;
+}
+#javascript-box:hover .skill-name{
+  display: none;
+}
+#javascript-box:hover svg{
+  display: none;
+}
+#java-rating{
+  display: none;
+}
+#java-box{
+  display: flex;
+  justify-content: center;
+}
+#java-box:hover #java-rating{
+  display: block;
+}
+#java-box:hover .skill-name{
+  display: none;
+}
+#java-box:hover svg{
+  display: none;
+}
+#python-rating{
+  display: none;
+}
+#python-box{
+  display: flex;
+  justify-content: center;
+}
+#python-box:hover #python-rating{
+  display: block;
+}
+#python-box:hover .skill-name{
+  display: none;
+}
+#python-box:hover svg{
+  display: none;
+}
+#oraclesql-rating{
+  display: none;
+}
+#oraclesql-box{
+  display: flex;
+  justify-content: center;
+}
+#oraclesql-box:hover #oraclesql-rating{
+  display: block;
+}
+#oraclesql-box:hover .skill-name{
+  display: none;
+}
+#oraclesql-box:hover svg{
+  display: none;
+}
+#mongodb-rating{
+  display: none;
+}
+#mongodb-box{
+  display: flex;
+  justify-content: center;
+}
+#mongodb-box:hover #mongodb-rating{
+  display: block;
+}
+#mongodb-box:hover .skill-name{
+  display: none;
+}
+#mongodb-box:hover svg{
+  display: none;
+}
+.certifications-section{
+  width: 90%;
+  margin: auto;
+  margin-top: 0.625rem;
+}
+.certifications-container{
+  width: 90%;
+  margin: auto;
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.certification-box{
+  width: 90%;
+  height: 3.125rem;
+  background-color: white;
+  margin: 0.625rem;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  border: 0.0313rem solid grey;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.625rem 0.9375rem -0.1875rem, rgba(0, 0, 0, 0.05) 0rem 0.25rem 0.375rem -0.125rem;}
+.certification-box:hover{
+  background-color: #141618;
+  color: white;
+  transform: scale(1.01);
+}
+.view-certificate-btn{
+  width: 6.25rem;
+  height: 2.1875rem;
+  background-color: black;
+  position: absolute;
+  right: 0.625rem;
+  border-radius: 3.125rem;
+  color: white;
+  cursor: pointer;
+  top: 0.5rem;
+  border: none;
+}
+.view-certificate-btn:hover{
+  background-color: #595;
+}
+.certification-box span{
+  margin-left: 5.25rem;
+}
+.certification-box svg{
+  position: absolute;
+  left: 1.25rem;
+}
+#harker-rank-logo{
+  fill: green;
+}
+.certification-box img{
+  position: absolute;
+  left: 1.25rem;
+}
+.projects-section{
+  width: 90%;
+  margin: auto;
+  margin-top: 0.625rem;
+}
+.projects-container{
+  width: 90%;
+  margin: auto;
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+
+}
+.project-box{
+ width: 30%;
+ height: 18.75rem;
+ background-color: #fff;
+ border-radius: 1.5625rem;
+ box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  background-color: #141618;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  bottom: 0px;
+  position: relative;
+}
+footer p {
+  margin-bottom: 10px;
+}
+#footer-logo-container {
+  width: 170px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+#footeremail {
+  width: 40px;
+  height: 40px;
+  color: black;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  background-color: white;
+}
+#footeremail:hover {
+  background-color: #9e6f52;
+  transform: scale(1.1);
+  /* background-color: rgba(0, 0, 0, 0.411); */
+}
+#footerlinkedin {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 100%;
+  color: #0077b5;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+#footerlinkedin:hover {
+  background-color: #0077b5;
+  transform: scale(1.1);
+  color: white;
+}
+#footergithub {
+  color: black;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  /* transition: background-color 0.3s ease-in-out; */
+}
+#footergithub:hover {
+  background-color: black;
+  transform: scale(1.1);
+  color: white;
+}
+i {
+  font-size: 22px;
+}
+#footermail:hover svg {
+  filter: brightness(0) invert(1);
+}
+#footer-logo-container a{
+  text-decoration: none;
+}
