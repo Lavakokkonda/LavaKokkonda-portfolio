@@ -287,7 +287,7 @@ header button:hover{
   margin: auto;
   margin-top: 1.25rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center; /* change to space bet*/
   align-items: center;
   flex-direction: row;
 }
@@ -312,6 +312,7 @@ header button:hover{
  position: relative;
  box-shadow: rgba(17, 17, 26, 0.1) 0rem 0.25rem 1rem, rgba(17, 17, 26, 0.05) 0rem 0.5rem 2rem;
  text-decoration: none;
+ margin: 30px;  /* remove this*/
 }
 .project-box:hover{
    bottom: 0.625rem;
@@ -421,4 +422,106 @@ i {
 }
 #footer-logo-container a{
   text-decoration: none;
+}
+.contact-side-bar{
+  position: fixed;
+  top: 200px;
+  right: 0px;
+  z-index: 9999;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.contact-icon-box{
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  margin: 10px 0px 0px 0px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.contact-icon-box:hover{
+  width: 250px;
+}
+.side-email{
+  top: 165px;
+  position: relative;
+}
+#side-email:hover{
+  background-color: #9e6f52;
+}
+.side-linkedin{
+  position: relative;
+  top: 50px;
+  color: #0077b5;
+}
+.side-github{
+  color: black;
+  position: relative;
+  top: 105px;
+}
+#side-linkedin:hover{
+  background-color: #0077b5 ;
+  color: white;
+  justify-content: end;
+  padding-right: 20px;
+  
+}
+#side-github:hover{
+  background-color:black;
+  color: white;
+}
+#side-email span{
+  display: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#side-email:hover span{
+  display: block;
+  color: white;
+}
+#side-linkedin span{
+  display: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+  transition: all 0s;
+}
+#side-linkedin:hover span{
+  display: block;
+}
+#side-github span{
+  display: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+  transition: all 0s;
+}
+#side-github:hover span{
+  display: block;
+}
+a{
+  text-decoration: none;
+}
+#topBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 17px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #141618;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+#topBtn:hover {
+  background-color: #555;
 }

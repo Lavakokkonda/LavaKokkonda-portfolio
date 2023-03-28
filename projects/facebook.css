@@ -1,0 +1,310 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+#totalbody {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(240, 242, 245);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  transition: display 2s;
+}
+#facebooktext {
+  color: #1877f2;
+  font-size: 57px;
+  font-weight: 900px;
+  margin-left: 182px;
+  font-family: "Poppins", sans-serif;
+}
+#tagline {
+  margin-top: 5px;
+  font-size: 28px;
+  margin-left: 180px;
+  /* SFProDisplay-Regular - 400
+    helvetica */
+}
+#loginbox {
+  position: absolute;
+  width: 400px;
+  height: 360px;
+  right: 200px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+input {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.342);
+}
+.inp {
+  width: 90%;
+  height: 50px;
+  padding-left: 12px;
+  font-size: 17px;
+}
+.inp:focus{
+  outline: none ;
+  border: 0.5px solid ;
+  border-color: #1877f2;
+  box-shadow: 0px 0px 2.3px #1877f2;
+  caret-color: #1877f2;
+}
+#loginbutton {
+  width: 92%;
+  height: 50px;
+  background-color: #1877f2;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  border-color: #1877f2;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+#Forgottentext {
+  text-align: center;
+  width: 90%;
+  margin-top: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.418);
+  padding-bottom: 20px;
+  color: #1877f2;
+}
+#createnewbutton {
+  width: 50%;
+  height: 50px;
+  margin: 5px;
+  border-radius: 7px;
+  border: none;
+  background-color: rgb(66, 183, 43);
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#bottomtext {
+  position: absolute;
+  bottom: 110px;
+  right: 260px;
+  font-size: 14px;
+}
+#signupbox {
+  width: 432px;
+  height: 550px;
+  background-color: #fff;
+  position: absolute;
+  right: 35%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.342) 0px 3px 8px;
+  display: none;
+  z-index: 999;
+}
+
+.signuptext {
+  margin-left: 15px;
+  margin-top: 10px;
+  /* padding-top: 10px; */
+}
+#signuptagline {
+  font-size: 14px;
+  color: grey;
+  padding-bottom: 15px;
+}
+#hrline {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+  margin-top: 10px;
+}
+#firstname {
+  width: 181px;
+  height: 38px;
+  margin-left: 15px;
+  padding-left: 10px;
+  background-color: rgb(244, 245, 246);
+  margin-top: 15px;
+}
+#surname {
+  width: 182px;
+  height: 38px;
+  margin-left: 10px;
+  padding-left: 10px;
+  background-color: rgb(244, 245, 246);
+  margin-top: 15px;
+}
+#mobilenum {
+  width: 90%;
+  height: 38px;
+  margin-left: 15px;
+  padding-left: 10px;
+  background-color: rgb(244, 245, 246);
+}
+#newpassword {
+  width: 90%;
+  height: 38px;
+  margin-left: 15px;
+  padding-left: 10px;
+  background-color: rgb(244, 245, 246);
+}
+#dobtext {
+  margin-top: 10px;
+  font-size: 12px;
+  margin-left: 15px;
+  color: gray;
+}
+#date {
+  width: 130px;
+  height: 38px;
+  margin-left: 15px;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+#month {
+  width: 130px;
+  height: 38px;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+#year {
+  width: 130px;
+  height: 38px;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+#gender {
+  margin-top: 10px;
+  font-size: 12px;
+  margin-left: 15px;
+  color: gray;
+}
+#female {
+  width: 130px;
+  height: 38px;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin-top: 3px;
+  text-align: left;
+  margin-left: 15px;
+  background-color: #fff;
+  border: rgba(128, 128, 128, 0.397) solid 1px;
+  font-size: 15px;
+  position: relative;
+}
+#femaleradio {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+#male {
+  width: 128px;
+  height: 38px;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin-top: 3px;
+  text-align: left;
+  background-color: #fff;
+  border: rgba(128, 128, 128, 0.397) solid 1px;
+  font-size: 15px;
+  position: relative;
+}
+#maleradio {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+#custom {
+  width: 132px;
+  height: 38px;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin-top: 3px;
+  text-align: left;
+  background-color: #fff;
+  border: rgba(128, 128, 128, 0.397) solid 1px;
+  font-size: 15px;
+  position: relative;
+}
+#customradio {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+#bottomtext1 {
+  margin-top: 10px;
+  margin-left: 15px;
+  font-size: 11px;
+}
+#bottomtext2 {
+  margin-top: 10px;
+  margin-left: 15px;
+  font-size: 11px;
+}
+#signupbutton {
+  width: 200px;
+  height: 38px;
+  border-radius: 5px;
+  border: none;
+  background-color: #00a400;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+#crossbutton {
+  width: 25px;
+  height: 25px;
+  /* background-color: #1877f2; */
+  color: grey;
+  background-color: white;
+  text-align: center;
+  font-size: 22px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+}
+#whitelayer {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffffc5;
+  position: relative;
+  z-index: 99;
+  display: none;
+}
+#learnmore {
+  text-decoration: none;
+}
+#eyebox {
+  position: absolute;
+  right: 30px;
+  top: 100px;
+  display: none;
+}
+#eye1{
+  position: absolute;
+  z-index: 9;
+  right: 10px;
+  /* display: none; */
+}
+#eye2{
+  position: absolute;
+  z-index: 99;
+  right: 10px;
+  display: none;
+}

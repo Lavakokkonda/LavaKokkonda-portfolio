@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <title>Facebook-log in or sign up</title>
+    <link rel="stylesheet" href="./facebook.css">
+    <link rel="icon" href="../htmlsrc/fb logo.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="totalbody">
+        <h1 id="facebooktext"><b>facebook</b> </h1>  
+        <p id="tagline">Facebook helps you connect and share <br>
+            with the people in your life.</p> <br> <br> <br> <br> <br> <br>
+    <div id="loginbox">
+        
+       <form action="">
+            <center>
+                <input id="loginemail" class="inp" type="text" placeholder="Email address or phone number" oninput=" emailCheck()">
+                <input id="loginpassword" class="inp" type="password" placeholder="Password" oninput="eyevisible()" ><div id="eyebox" onmousedown="passwordVisible()" onmouseup="passwordHide()"><i id="eye1" class="fa-regular fa-eye-slash"></i> <i id="eye2" class="fa-regular fa-eye"></i></div>
+                <input type="submit" value="Log in" id="loginbutton">  
+                <p id="Forgottentext"> Forgotten password?</p> <br>
+            </center>
+        </form>
+        <button id="createnewbutton" onclick="signupbox()"> 
+            Create new account 
+        </button> <br>
+    </div> 
+        <p id="bottomtext"><b>Create a Page </b> for a celebrity, brand or business</p>
+        <div id="signupbox"> 
+            <button id="crossbutton" onclick="closeSignUpBox()">
+                <div id="cross">&#10006</div>
+            </button>
+            <h1 class="signuptext">Sign Up</h1>
+            <label class="signuptext" id="signuptagline">It's quick and easy</label> <br>
+            <hr id="hrline">
+            <input id="firstname" type="text" placeholder="Firstname"> <input id="surname" type="text" placeholder="Surname">
+            <input id="mobilenum"  type="text" placeholder="Mobile number or email Address">
+            <input id="newpassword" type="password" placeholder="New password"> 
+            <p id="dobtext">Date of birth</p> 
+            <select name="Date" id="date">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+            <select name="Month" id="month">
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="Mar">Mar</option>
+                <option value="Apr">Apr</option>
+                <option value="May">May</option>
+                <option value="Jun">Jun</option>
+                <option value="Jul">Jul</option>
+                <option value="Aug">Aug</option>
+                <option value="Sep">Sep</option>
+                <option value="Oct">Oct</option>
+                <option value="Nov">Nov</option>
+                <option value="Dec">Dec</option>
+            </select>
+            <select name="Year" id="year">
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+            </select>
+
+        <p id="gender">Gender</p>
+        <button id="female" >Female <input type="radio" id="femaleradio" name="gender" value="female"></button>
+        <button id="male">Male <input type="radio" id="maleradio" name="gender" value="male"></button>
+        <button id="custom">Custom <input type="radio" id="customradio" name="gender" value="custom"></button>
+
+        <p id="bottomtext1">People who use our service may have uploaded your contact information to <br> Facebook. <a href="" id="learnmore"> Learn more.</a></p>
+        <p id="bottomtext2">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. <br> You may receive SMS notifications from us and can opt out at any time.</p>
+
+        <center>
+            <input type="submit" value="Sign Up" id="signupbutton">
+        </center>
+        </div>
+    </div>
+    
+    <div id="whitelayer"></div>
+    <script>
+        function signupbox(){
+            document.getElementById("signupbox").style.display = "block"
+            document.getElementById("whitelayer").style.display = "block"
+        }
+        function closeSignUpBox(){
+            document.getElementById("signupbox").style.display = "none"
+            document.getElementById("whitelayer").style.display = "none"
+        }
+        function eyevisible(){
+            document.getElementById("eyebox").style.display = "block"
+            
+        }
+        function passwordVisible(){
+            document.getElementById("loginpassword").setAttribute("type", "text")
+            document.getElementById("eye1").style.display = "none"
+            document.getElementById("eye2").style.display = "block"
+        }
+        function passwordHide(){
+            document.getElementById("loginpassword").setAttribute("type", "password")
+            document.getElementById("eye2").style.display = "none"
+            document.getElementById("eye1").style.display = "block"
+        }
+
+        // var email = "lavakokkonda@gmail.com"
+        // function emailCheck(){
+        //     var inputEmail = document.getElementById("loginemail").value
+        //     if (email == inputEmail){
+        //         document.getElementById("loginemail").style.borderColor = "green"
+        //         document.getElementById("loginemail").style.boxShadow = "0px 0px 2.3px green"
+        //     }
+        //     else{
+        //         document.getElementById("loginemail").style.borderColor = "red"
+        //         document.getElementById("loginemail").style.boxShadow = "0px 0px 2.3px red"
+        //     }
+        // }
+    </script>
+</form>
+</body>
+</html>
