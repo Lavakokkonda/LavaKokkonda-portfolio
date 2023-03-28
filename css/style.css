@@ -220,7 +220,7 @@ header button:hover{
 .certifications-section{
   width: 90%;
   margin: auto;
-  margin-top: 0.625rem;
+  margin-top: 1.875rem;
 }
 .certifications-container{
   width: 90%;
@@ -280,7 +280,7 @@ header button:hover{
 .projects-section{
   width: 90%;
   margin: auto;
-  margin-top: 0.625rem;
+  margin-top: 1.875rem;
 }
 .projects-container{
   width: 80%;
@@ -291,12 +291,30 @@ header button:hover{
   align-items: center;
   flex-direction: row;
 }
+.projects-container a:link{
+  color: black;
+}
+.projects-container a:visited{
+  color: black;
+}
+.projects-container a:hover{
+  color: black;
+}
+.projects-container a:active{
+  color: black;
+}
+
 .project-box{
  width: 30%;
  height: 15.625rem;
  background-color: #fff;
  border-radius: 1.5625rem;
- box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+ position: relative;
+ box-shadow: rgba(17, 17, 26, 0.1) 0rem 0.25rem 1rem, rgba(17, 17, 26, 0.05) 0rem 0.5rem 2rem;
+ text-decoration: none;
+}
+.project-box:hover{
+   bottom: 0.625rem;
 }
 .image-container{
   width: 80%;
@@ -304,17 +322,20 @@ header button:hover{
   margin: auto;
   margin-top: 1.875rem;
   border-radius: 0.625rem;
+  border: 0.125rem solid rgba(0, 0, 0, 0.836);
+  overflow: hidden;
 }
 .image-container img{
   width: 100%;
+  height: 100%;
   background-position: center center;
-  border-radius: 0.625rem;
-  overflow: hidden;
+  /* border-radius: 0.625rem; */
 }
 
 .project-box h3{
   text-align: center;
-  margin-top: 1.875rem;
+  margin: 0.625rem;
+  font-size: 1.125rem;
 }
 
 
@@ -326,17 +347,17 @@ header button:hover{
 footer {
   background-color: #141618;
   color: #fff;
-  padding: 20px;
+  padding: 1.25rem;
   text-align: center;
-  bottom: 0px;
+  bottom: 0rem;
   position: relative;
 }
 footer p {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 #footer-logo-container {
-  width: 170px;
-  height: 70px;
+  width: 10.625rem;
+  height: 4.375rem;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -344,8 +365,8 @@ footer p {
   margin: auto;
 }
 #footeremail {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   color: black;
   border-radius: 100%;
   justify-content: center;
@@ -360,8 +381,8 @@ footer p {
   /* background-color: rgba(0, 0, 0, 0.411); */
 }
 #footerlinkedin {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: white;
   border-radius: 100%;
   color: #0077b5;
@@ -377,8 +398,8 @@ footer p {
 }
 #footergithub {
   color: black;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: white;
   border-radius: 100%;
   justify-content: center;
@@ -393,7 +414,7 @@ footer p {
   color: white;
 }
 i {
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 #footermail:hover svg {
   filter: brightness(0) invert(1);
