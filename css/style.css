@@ -54,11 +54,11 @@ header button:hover{
   line-height: 1.5625rem;
   padding-left: 1.875rem;
   font-size: 1rem;
+  height: 3.125rem;
 }
 .skills-section{
   width: 90%;
   margin: auto;
-  margin-top: 0.625rem;
 }
 .skills-container{
   width: 100%;
