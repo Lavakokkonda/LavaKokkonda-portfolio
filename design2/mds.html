@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+            margin: 0%;
+            padding: 0%;
+        }
+      .slider-container {
+        height: 100vh;
+        overflow-y: hidden;
+      }
+
+      .slider-section {
+        height: 100vh;
+        background-color: #fff;
+        position: relative;
+      }
+
+      .slider-dots {
+        position: fixed;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+      }
+
+      .slider-dot {
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ccc;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+      .slider-dot.active {
+        background-color: #000;
+      }
+
+      .slider-buttons {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+      }
+
+      .slider-button {
+        display: block;
+        width: 100px;
+        height: 40px;
+        border: none;
+        border-radius: 20px;
+        background-color: #ccc;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider-container">
+      <div class="slider-section" style="background-color: red;"></div>
+      <div class="slider-section" style="background-color: blue;"></div>
+      <div class="slider-section" style="background-color: green;"></div>
+    </div>
+    <div class="slider-dots">
+      <span class="slider-dot"></span>
+      <span class="slider-dot"></span>
+      <span class="slider-dot"></span>
+    </div>
+    <div class="slider-buttons">
+      <button class="slider-button" data-section="0">Section 1</button>
+      <button class="slider-button" data-section="1">Section 2</button>
+      <button class="slider-button" data-section="2">Section 3</button>
+    </div>
+    <script>
+      const sliderContainer = document.querySelector(".slider-container");
+      const sliderSections = document.querySelectorAll(".slider-section");
+      const sliderDots = document.querySelectorAll(".slider-dot");
+      const sliderButtons = document.querySelectorAll(".slider-button");
+
+      let activeSection = 0;
+
+      sliderContainer.addEventListener("scroll", () => {
+        const scrollPos = sliderContainer.scrollTop;
+        activeSection = Math.round(scrollPos / window.innerHeight);
+        setActiveDot();
+      });
+
+      function setActiveDot() {
+        sliderDots.forEach((dot, index) => {
+          if (index === activeSection) {
+            dot.classList.add("active");
+          } else {
+            dot.classList.remove("active");
+          }
+        });
+      }
+
+      sliderButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const sectionIndex = button.dataset.section;
+          const sectionOffsetTop = sliderSections[sectionIndex].offsetTop;
+          sliderContainer.scrollTo({ top: sectionOffsetTop, behavior: "smooth" });
+          activeSection = sectionIndex;
+          setActiveDot();
+        });
+      });
+    </script>
+  </body>
+</html>
